@@ -1,0 +1,256 @@
+/*common start*/
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+:root {
+    --defultFont: 'Montserrat', sans-serif;
+    --titelFont: 'Alfa Slab One', cursive;
+    --bebasFont: 'Bebas Neue', cursive;
+    --themecolure: #333300;
+}
+
+*{
+    margin: 0px;
+    margin-bottom: 0px !important;
+    padding: 0px;
+	font-family: 'Bebas Neue', cursive;
+}
+
+p{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+}
+
+body{
+    color: #333300;
+}
+
+.push-right {
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.push-left{
+	flex-direction: column;
+    align-items: flex-start;	
+}
+
+.btn {
+  background-color: #ff0000;
+  color: #fff;
+  font-weight: 900;
+  font-size: 18px;
+  border: 1px transparent;
+}
+
+.btn:hover, .btn:first-child:hover {
+  color: #333300;
+  background-color: #fff;
+  border-color: #333300;
+}
+
+/*common end*/
+
+/* header start */
+header{
+	background-image: url(../images/header_bg.jpg);
+	background-repeat: no-repeat;
+	position: relative;
+    background-size: cover;  
+}
+
+.delivery{
+	padding-top: 10px;
+	padding-right: 6px;
+}	
+
+.delivery span{
+	padding-left: 5px;
+	font-size: 16.67px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.dashed{
+	border: 2px;
+	border-style: dashed;
+	width:fit-content;
+	font-size:24px;
+	color: #3d2514;
+	letter-spacing: 2px;
+}
+
+.ft_title{
+	font-family: 'Alfa Slab One', cursive;
+	width: fit-content;
+	font-size: 8vw;
+	color: #3d2514;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	text-shadow: 3px 4px white;
+}
+
+.ft_subtitle{
+	font-family: 'Alfa Slab One', cursive;
+	width: fit-content;
+	font-size: 5vw;
+	color: #3d2514;
+	text-transform: uppercase;
+	text-shadow: 3px 4px white;	
+}
+/* header end */
+
+/* blog start*/
+.blog-title{
+	position: absolute;
+	top: 2rem;
+	left: 1.5rem;
+	color: #fff;
+}
+/* blog end*/
+/* menu start*/
+.menu-title1{
+	display: inline-block;
+	padding: 8px 20px;
+	text-transform: uppercase;
+	background-color: #ffcc33;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 25px;
+}
+.menu-title2{
+	display: inline-block;
+	text-transform: uppercase;
+	font-family: 'Alfa Slab One', cursive;
+	font-size: 50px;
+}
+
+.menu-order{
+	background-color: #ff0000;
+	text-transform: uppercase;
+	color: rgb(255, 255, 255);
+	font-family: 'Alfa Slab One', cursive;
+	letter-spacing: 1px;
+	font-weight: 500;
+	transition: all 0.4s;	
+}
+/* menu end */
+
+/* event start */
+.slider-card {
+	box-shadow: 10px 10px 30px #333;
+	padding: 25px;
+}
+
+.carousel-indicators{
+	margin-left: 0px;
+	display: flex !important;
+	flex-direction: row !important;
+	justify-content: flex-start !important;	
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background-color: #cccccc;
+}
+
+.carousel-indicators [data-bs-target].active {
+    background-color: #ffcc33;
+}
+
+.carousel-indicators-setup{
+
+}
+
+.carousel-item h4{
+	font-size: 24px;
+	font-family: 'Bebas Neue', cursive;
+	text-transform: uppercase;
+	margin-bottom: 5px !important;
+}
+
+.carousel-item h2{
+	font-size: 50px;
+	font-family: 'Bebas Neue', cursive;
+	text-transform: uppercase;	
+	margin-bottom: 20px !important;
+}
+/* event end */
+
+/* reservation start */
+.bg-reservation{
+	position: relative;
+}
+
+.reservation-bg1{
+	position:absolute;
+	top: 0px;
+	height: 350px;
+	left: 0px;
+}
+.reservation-bg2{
+	position: absolute;
+	top: 39%;
+	left: 11%;
+	height: 349px;
+}
+.reservation-bg3{
+	position:absolute;
+	bottom: -235px;
+	right: 0px;
+	height: 515px;
+	z-index: -2;
+}
+
+.bg-reservation h3{
+	font-family: 'Bebas Neue', cursive;
+	font-size: 28px;
+}
+
+.bg-reservation h2{
+	font-family: 'Alfa Slab One', cursive;
+	font-size: 50px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+/* reservation end */
+
+/* footer start */
+footer{
+	margin: 150px 40px 0px;
+    margin-bottom: 70px;
+	background-image: url(../images/footer-bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #fff;
+}
+
+.footer-contact{
+	display: flex;
+	justify-content: end;
+	align-items: flex-end;
+}
+
+.footer-contact ul{
+	list-style: none;
+}
+
+.footer-contact li{
+	padding: 5px;
+}
+
+.social-icon{
+	display: flex;
+	justify-content: end;
+	align-items: flex-end;	
+}
+.social-icon ul{
+	list-style: none;
+}
+
+.social-icon li{
+	display: inline;
+	padding: 5px;
+}
+/* footer end */
+
